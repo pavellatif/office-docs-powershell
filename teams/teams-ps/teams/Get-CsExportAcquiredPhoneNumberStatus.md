@@ -38,13 +38,7 @@ Get-CsExportAcquiredPhoneNumberStatus -OrderId 0e923e2c-ab0e-4b7a-be5a-906be8c
 **Status: Pending**
 The output shows the status Pending when the request is created but processing has not been started. 
 
-```
-CreatedAt	    	: 6/24/2024 9:26:44 PM
-CreatedBy	      	: admin1@contoso.com
-Status		      	: Pending
-DownloadLinkExpiry	: null
-DownloadLink	    	: null
-```
+
 
 This example displays the OrderId of the export acquired phone numbers operation. The OrderId can be used to get the download link for the file.
 
