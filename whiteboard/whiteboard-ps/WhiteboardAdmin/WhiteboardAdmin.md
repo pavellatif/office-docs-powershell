@@ -37,6 +37,9 @@ described here is for Whiteboard content stored in Azure.
 
 ## WhiteboardAdmin Cmdlets
 
+### [Export-WhiteboardHtml](Export-WhiteboardHtml.md)
+Exports Microsoft Whiteboards to HTML files using the Microsoft Graph API.
+
 ### [Get-OriginalFluidWhiteboards](Get-OriginalFluidWhiteboards.md)
 Gets one or more whiteboards that are originally created as Fluid whiteboards, directly into users OneDrive and return them as objects.
 
@@ -63,6 +66,9 @@ Gets one or more whiteboards that are migrated to OneDrive and returns them as o
 
 ### [Invoke-TransferAllWhiteboards](Invoke-TransferAllWhiteboards.md)
 Transfer ownership of all Whiteboards owned by a user to another user.
+
+### [Invoke-WhiteboardHtmlRetry](Invoke-WhiteboardHtmlRetry.md)
+Retries whiteboard HTML exports that failed in a previous Export-WhiteboardHtml run.
 
 ### [Remove-Whiteboard](Remove-Whiteboard.md)
 Deletes the specified whiteboard for the given user from the Microsoft Whiteboard service.
