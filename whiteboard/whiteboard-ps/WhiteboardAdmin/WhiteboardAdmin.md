@@ -49,6 +49,9 @@ Gets one or more whiteboards that are originally created as fluid directly into 
 ### [Get-Whiteboard](Get-Whiteboard.md)
 Gets one or more whiteboards in Azure from the Microsoft Whiteboard service and returns them as objects.
 
+### [Get-WhiteboardMigrationMapping](Get-WhiteboardMigrationMapping.md)
+Gets all Azure whiteboards for a user and maps them with their migrated Fluid boards in SharePoint OneDrive.
+
 ### [Get-WhiteboardOwners](Get-WhiteboardOwners.md)
 Gets all the users in a tenant who own whiteboards in a specified geography.
 
@@ -81,6 +84,3 @@ Sets the owner for a Whiteboard.
 
 ### [Set-WhiteboardSettings](Set-WhiteboardSettings.md)
 Get the users Whiteboard settings.
-
-### [Get-WhiteboardMigrationMapping](Get-WhiteboardMigrationMapping.md)
-Gets all Azure whiteboards for a user and maps them with their migrated Fluid boards in SharePoint OneDrive.
