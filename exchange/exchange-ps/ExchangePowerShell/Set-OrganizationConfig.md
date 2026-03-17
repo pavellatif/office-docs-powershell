@@ -4057,7 +4057,7 @@ The RejectDirectSend parameter specifies whether to block Direct Send in your or
 
 - $true: Direct Send is blocked. Exchange Online rejects anonymous messages sent from your own domain to your organization's mailboxes when the following conditions are met:
 
-  • The anonymous incoming messages don't match any inbound connectors. We only consider here those inbound connectors configured to match the sender IP or certificate.
+  • The anonymous incoming messages don't match any inbound connectors. We only consider inbound connectors configured to match the sender IP or certificate.
 
   • The domain in the MAIL FROM address (also known as the `5321.MailFrom` address, P1 sender, or envelope sender) is an accepted domain in your organization.
 
