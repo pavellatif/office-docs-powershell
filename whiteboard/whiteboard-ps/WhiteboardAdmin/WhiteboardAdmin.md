@@ -30,8 +30,8 @@ described here is for Whiteboard content stored in Azure.
 > OneDrive. Admin can use Admin portal to give the `Site-CollectionAdmin` role to user account for
 > which they want to get all whiteboards.
 >
-> 1. Go to **SharePoint Admin center**
-> 2. On left hand side, select **More features**
+> 1. Go to **SharePoint Admin center**.
+> 2. On left hand side, select **More features**.
 > 3. In **User profiles**, select **Open** > **Manage User profiles** > **Search user** >
 >    **Manage site collection owners** > **Add Admin as Site Collection Administrator**.
 
