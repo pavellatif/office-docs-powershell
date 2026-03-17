@@ -855,6 +855,8 @@ Accept wildcard characters: False
 
 The MobilePhone parameter specifies the user's primary mobile phone number.
 
+In Exchange Online, you can also use the MobilePhone parameter on the [Update-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser) cmdlet in Microsoft Graph PowerShell.
+
 ```yaml
 Type: String
 Parameter Sets: (All)
@@ -1022,6 +1024,8 @@ Accept wildcard characters: False
 > Applicable: Exchange Server 2010, Exchange Server 2013, Exchange Server 2016, Exchange Server 2019, Exchange Server SE, Exchange Online, Built-in security add-on for on-premises mailboxes
 
 The Phone parameter specifies the user's office telephone number.
+
+In Exchange Online, you can also use the BusinessPhones parameter on the [Update-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser) cmdlet in Microsoft Graph PowerShell.
 
 ```yaml
 Type: String
