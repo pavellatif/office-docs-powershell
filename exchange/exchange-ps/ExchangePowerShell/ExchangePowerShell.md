@@ -1665,6 +1665,14 @@ Exchange PowerShell is built on PowerShell technology to a powerful command-line
 
 ### [Get-SettingOverride](Get-SettingOverride.md)
 
+### [Invoke-ProvisioningAcceptedDomainDiagnostic](Invoke-ProvisioningAcceptedDomainDiagnostic.md)
+
+### [Invoke-ProvisioningCompanyObjectDiagnostic](Invoke-ProvisioningCompanyObjectDiagnostic.md)
+
+### [Invoke-ProvisioningRecipientDiagnostic](Invoke-ProvisioningRecipientDiagnostic.md)
+
+### [Invoke-ProvisioningVerifyRbacDiagnostic](Invoke-ProvisioningVerifyRbacDiagnostic.md)
+
 ### [New-ApplicationAccessPolicy](New-ApplicationAccessPolicy.md)
 
 ### [New-AuthenticationPolicy](New-AuthenticationPolicy.md)
