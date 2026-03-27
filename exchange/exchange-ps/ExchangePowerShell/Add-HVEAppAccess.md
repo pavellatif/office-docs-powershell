@@ -31,6 +31,8 @@ An HVE account is a special type of mail user (also known as a mail-enabled user
 
 The Allowed Apps list defines which Microsoft Entra applications are authorized to authenticate and send email via OAuth using the specified HVE account. Each HVE account can have up to ten allowed apps assigned. For more information, see [OAuth authentication for High Volume Email](https://learn.microsoft.com/exchange/mail-flow-best-practices/oauth-high-volume-mails-m365).
 
+Changes can take up to 5 minutes to take effect.
+
 You need to be assigned permissions before you can run this cmdlet. Although this article lists all parameters for the cmdlet, you might not have access to some parameters if they aren't included in the permissions assigned to you. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://learn.microsoft.com/powershell/exchange/find-exchange-cmdlet-permissions).
 
 ## EXAMPLES
