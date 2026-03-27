@@ -20,7 +20,7 @@ For information about the parameter sets in the Syntax section below, see [Excha
 ## SYNTAX
 
 ```
-Add-HVEAppAccess -AppIds <MultiValuedProperty> [-Identity] <MailUserIdParameter>
+Add-HVEAppAccess [-Identity] <MailUserIdParameter> -AppIds <MultiValuedProperty>
  [-Confirm]
  [-WhatIf]
  [<CommonParameters>]
@@ -75,9 +75,11 @@ Accept wildcard characters: False
 
 > Applicable: Exchange Online, Built-in security add-on for on-premises mailboxes
 
-The AppIds parameter specifies the Microsoft Entra application to add to the Allowed Apps list of the HVE account. You identify the application (service principal) ID by its GUID value. You can specify a maximum of 10 GUID values separated by commas.
+The AppIds parameter specifies the Microsoft Entra application to add to the Allowed Apps list of the HVE account.
 
-**Note**: You must use the service principal object ID value from the Overview page of the Enterprise Application node in the Azure Portal. Don't use the object ID value from the Overview page of the App Registrations node. Using the wrong value causes authentication failures. For more information, see [Authenticate an IMAP, POP or SMTP connection using OAuth](https://learn.microsoft.com/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth?source=recommendations#use-client-credentials-grant-flow-to-authenticate-smtp-imap-and-pop-connections).
+A valid value for this parameter is the **Object ID** (GUID) value of the application from the **Enterprise applications \| All Applications** page in the Microsoft Azure Portal. You can specify a maximum of 10 GUID values separated by commas.
+
+**Note**: Don't use an **Application (client) ID** value from the **App Registrations** page in the Microsoft Azure Portal or other GUID values. Values that aren't valid **Object ID** values result in errors. For more information about applications, see [Authenticate an IMAP, POP or SMTP connection using OAuth](https://learn.microsoft.com/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth?source=recommendations#use-client-credentials-grant-flow-to-authenticate-smtp-imap-and-pop-connections).
 
 ```yaml
 Type: MultiValuedProperty

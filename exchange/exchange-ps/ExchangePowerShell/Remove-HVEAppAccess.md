@@ -44,12 +44,21 @@ Remove-HVEAppAccess -Identity HVEAccount01@tailspintoys.com -AppIds "11111111-11
 
 This example removes the specified application from the Allowed Apps list of the specified HVE account.
 
-### Example 1
+### Example 2
 ```powershell
 Remove-HVEAppAccess -Identity HVEAccount01@tailspintoys.com -AppIds "11111111-1111-1111-1111-111111111111","22222222-2222-2222-2222-222222222222"
 ```
 
 This example removes the specified applications from the Allowed Apps list of the specified HVE account.
+
+### Example 3
+```powershell
+$Apps = (Get-HVEAccountSettings -Identity HVEAccount01@tailspintoys.com).AllowedApps
+
+Remove-HVEAppAccess -Identity HVEAccount01@tailspintoys.com -AppIds $Apps
+```
+
+This example removes all existing applications from the Allowed Apps list of the specified HVE account.
 
 ## PARAMETERS
 
@@ -76,6 +85,8 @@ Accept wildcard characters: False
 > Applicable: Exchange Online, Built-in security add-on for on-premises mailboxes
 
 The AppIds parameter specifies the Microsoft Entra application to remove from the Allowed Apps list of the HVE account. You can specify multiple values separated by commas.
+
+To see the list of currently configured apps for the HVE account, run the following command: `(Get-HVEAccountSettings -Identity HVEAccount01@tailspintoys.com).AllowedApps`.
 
 ```yaml
 Type: MultiValuedProperty
