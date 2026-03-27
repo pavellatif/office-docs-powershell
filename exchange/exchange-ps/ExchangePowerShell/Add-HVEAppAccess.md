@@ -42,14 +42,14 @@ You need to be assigned permissions before you can run this cmdlet. Although thi
 Add-HVEAppAccess -Identity HVEAccount01@tailspintoys.com -AppIds "11111111-1111-1111-1111-111111111111"
 ```
 
-This example adds the application with GUID “11111111-1111-1111-1111-111111111111” to the Allowed Apps list of the HVE account “HVEAccount01@tailspintoys.com”.
+This example adds the specified application to the Allowed Apps list of the specified HVE account.
 
 ### Example 1
 ```powershell
 Add-HVEAppAccess -Identity HVEAccount01@tailspintoys.com -AppIds "11111111-1111-1111-1111-111111111111","22222222-2222-2222-2222-222222222222"
 ```
 
-This example adds the applications with GUIDs “11111111-1111-1111-1111-111111111111” and "22222222-2222-2222-2222-222222222222" to the Allowed Apps list of the HVE account “HVEAccount01@tailspintoys.com”.
+This example adds the specified applications to the Allowed Apps list of the specified HVE account.
 
 ## PARAMETERS
 
