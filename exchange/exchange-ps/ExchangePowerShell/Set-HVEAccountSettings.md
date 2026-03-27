@@ -13,7 +13,7 @@ title: Set-HVEAccountSettings
 ## SYNOPSIS
 This cmdlet is available only in the cloud-based service.
 
-Use the Set-HVEAccountSettings cmdlet to modify the account settings of a high volume email (HVE) account.
+Use the Set-HVEAccountSettings cmdlet to modify the account settings of a High Volume Email (HVE) account.
 
 For information about the parameter sets in the Syntax section below, see [Exchange cmdlet syntax](https://learn.microsoft.com/powershell/exchange/exchange-cmdlet-syntax).
 
@@ -27,7 +27,9 @@ Set-HVEAccountSettings [-Identity] <MailUserIdParameter> [-ReplyTo <SmtpAddress>
 ```
 
 ## DESCRIPTION
-An HVE account is a special type of mail user (also known as a mail-enabled user) used to send large amounts of email. For more information, see [High volume email](https://learn.microsoft.com/exchange/mail-flow-best-practices/high-volume-mails-m365).
+An HVE account is a special type of mail user (also known as a mail-enabled user) used to send large amounts of email. For more information, see [High Volume Email](https://learn.microsoft.com/exchange/mail-flow-best-practices/high-volume-mails-m365).
+
+Changes can take up to 5 minutes to take effect.
 
 You need to be assigned permissions before you can run this cmdlet. Although this article lists all parameters for the cmdlet, you might not have access to some parameters if they aren't included in the permissions assigned to you. To find the permissions required to run any cmdlet or parameter in your organization, see [Find the permissions required to run any Exchange cmdlet](https://learn.microsoft.com/powershell/exchange/find-exchange-cmdlet-permissions).
 
@@ -35,10 +37,10 @@ You need to be assigned permissions before you can run this cmdlet. Although thi
 
 ### Example 1
 ```powershell
-Set-HVEAccountSettings -Identity simone@tailspintoys.com -ReplyTo marketing@tailspintoys.com
+Set-HVEAccountSettings -Identity HVEAccount01@tailspintoys.com -ReplyTo marketing@tailspintoys.com
 ```
 
-This example modifies the HVE account `simone@tailspintoys.com` by setting the ReplyTo address to `marketing@tailspintoys.com`.
+This example modifies the HVE account `HVEAccount01@tailspintoys.com` by setting the ReplyTo address to `marketing@tailspintoys.com`.
 
 ## PARAMETERS
 
