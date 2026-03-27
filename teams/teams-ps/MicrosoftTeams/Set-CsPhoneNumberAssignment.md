@@ -160,13 +160,19 @@ Set-CsPhoneNumberAssignment -Identity user1@contoso.com -PhoneNumber '+142555512
 ```
 This example shows how to send an email to Teams phone users informing them about the new telephone number assignment. Note: For assignment of India telephone numbers provided by Airtel, Teams Phone users will automatically receive an email outlining the usage guidelines and restrictions. This notification is mandatory and cannot be opted out of.
 
+### Example 14
+```powershell
+Set-CsPhoneNumberAssignment -Identity user1@contoso.com -PhoneNumber '+14255551234' -PhoneNumberType CallingPlan -LocationId "7fda0c0b-6a3d-48b8-854b-3fbe9dcf6513" -AssignmentCategory Alternate
+```
+This example shows how to assign an alternate calling plan number to a user. The alternate number can be from any country/region where the tenant can acquire a telephone number from. 
+
 ## PARAMETERS
 
 ### -AssignmentCategory
 
 > Applicable: Microsoft Teams
 
-This parameter indicates the phone number assignment category if it isn't the primary phone number. For example, a Private line can be assigned to a user using '-AssignmentCategory Private'.
+This parameter indicates the phone number assignment category if it isn't the primary phone number. For example, a Private line can be assigned to a user using '-AssignmentCategory Private' or an Alternate line can be assigned to a user using '-AssignmentCategory Alternate'
 
 
 ```yaml
@@ -360,7 +366,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Object
 
 ## NOTES
-The cmdlet is available in Teams PowerShell module 3.0.0 or later. The parameter set LocationUpdate was introduced in Teams PowerShell module 5.3.1-preview. The parameter NetworkSiteId was introduced in Teams PowerShell module 5.5.0. The parameter set NetworkSiteUpdate was introduced in Teams PowerShell module 5.5.1-preview.
+The cmdlet is available in Teams PowerShell module 3.0.0 or later. The parameter set LocationUpdate was introduced in Teams PowerShell module 5.3.1-preview. The parameter NetworkSiteId was introduced in Teams PowerShell module 5.5.0. The parameter set NetworkSiteUpdate was introduced in Teams PowerShell module 5.5.1-preview. Alternate number assignment was introduced in Teams PowerShell module 7.6.0.
 
 The cmdlet is only available in commercial and GCC cloud instances.
 
