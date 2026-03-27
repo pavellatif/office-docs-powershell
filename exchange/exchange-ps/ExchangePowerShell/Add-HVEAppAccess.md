@@ -13,7 +13,7 @@ title: Add-HVEAppAccess
 ## SYNOPSIS
 This cmdlet is available only in the cloud-based service.
 
-Use the Add-HVEAppAccess cmdlet to add applications to the Allowed Apps list of a high volume email (HVE) account.
+Use the Add-HVEAppAccess cmdlet to add applications to the Allowed Apps list of a High Volume Email (HVE) account.
 
 For information about the parameter sets in the Syntax section below, see [Exchange cmdlet syntax](https://learn.microsoft.com/powershell/exchange/exchange-cmdlet-syntax).
 
@@ -27,7 +27,7 @@ Add-HVEAppAccess -AppIds <MultiValuedProperty> [-Identity] <MailUserIdParameter>
 ```
 
 ## DESCRIPTION
-An HVE account is a special type of mail user (also known as a mail-enabled user) used to send large amounts of email. For more information, see [High volume email](https://learn.microsoft.com/exchange/mail-flow-best-practices/high-volume-mails-m365).
+An HVE account is a special type of mail user (also known as a mail-enabled user) used to send large amounts of email. For more information, see [High Volume Email](https://learn.microsoft.com/exchange/mail-flow-best-practices/high-volume-mails-m365).
 
 The Allowed Apps list defines which Microsoft Entra applications are authorized to authenticate and send email via OAuth using the specified HVE account. Each HVE account can have up to ten allowed apps assigned. For more information, see [OAuth authentication for High Volume Email](https://learn.microsoft.com/exchange/mail-flow-best-practices/oauth-high-volume-mails-m365).
 
@@ -37,17 +37,17 @@ You need to be assigned permissions before you can run this cmdlet. Although thi
 
 ### Example 1
 ```powershell
-Add-HVEAppAccess -Identity simone@tailspintoys.com -AppIds "11111111-1111-1111-1111-111111111111"
+Add-HVEAppAccess -Identity HVEAccount01@tailspintoys.com -AppIds "11111111-1111-1111-1111-111111111111"
 ```
 
-This example removes the specified application from the Allowed Apps list of the specified HVE account.
+This example adds the application with GUID “11111111-1111-1111-1111-111111111111” to the Allowed Apps list of the HVE account “HVEAccount01@tailspintoys.com”.
 
 ### Example 1
 ```powershell
-Add-HVEAppAccess -Identity simone@tailspintoys.com -AppIds "11111111-1111-1111-1111-111111111111","22222222-2222-2222-2222-222222222222"
+Add-HVEAppAccess -Identity HVEAccount01@tailspintoys.com -AppIds "11111111-1111-1111-1111-111111111111","22222222-2222-2222-2222-222222222222"
 ```
 
-This example removes the specified applications from the Allowed Apps list of the specified HVE account.
+This example adds the applications with GUIDs “11111111-1111-1111-1111-111111111111” and "22222222-2222-2222-2222-222222222222" to the Allowed Apps list of the HVE account “HVEAccount01@tailspintoys.com”.
 
 ## PARAMETERS
 
