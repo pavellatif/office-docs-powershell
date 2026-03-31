@@ -24,8 +24,8 @@ New-CsAutoRecordingTemplate -Name <String> -Description <String> -SharePointHost
 
 ## DESCRIPTION
 
-> [!CAUTION]
-> The functionality provided by this cmdlet will only work for customers that are participating in the Voice Applications private preview for this feature. General Availability for this functionality has not been determined at this time.
+>[!CAUTION]
+>The functionality provided by this cmdlet will only work for customers that are participating in the Voice Applications private preview for this feature. General Availability for this functionality has not been determined at this time.
 
 Use the New-CsAutoRecordingTemplate cmdlet to create an Auto Recording tempalte that can be assigned to a call queue.
 
@@ -124,6 +124,9 @@ Accept wildcard characters: False
 
 ### -SharePointHostName
 
+>[!CAUTION]
+>This must already exist. The cmdlet will not create the SharePoint hostname.
+
 The SharePoint hostname where the recordings and transcripts are stored.
 
 ```yaml
@@ -138,10 +141,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
->[!CAUTION]
->This must already exist. The cmdlet will not create the SharePoint hostname.
-
 ### -SharePointSiteName
+
+>[!CAUTION]
+>This must already exist. The cmdlet will not create the SharePoint site.
 
 The SharePoint sitename where the recordings and transcripts are stored.
 
@@ -156,9 +159,6 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
->[!CAUTION]
->This must already exist. The cmdlet will not create the SharePoint site.
 
 ### -RecordingDocumentOwner
 
@@ -196,6 +196,9 @@ Accept wildcard characters: False
 
 ### -AutoRecordingAnnouncementTextToSpeechPrompt
 
+>[!CAUTION]
+>This text needs to be entered in the same language that is set for the call queue.
+
 The text to speach prompt that will be played to callers telling them their call is being recorded.
 
 ```yaml
@@ -209,9 +212,6 @@ Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
-
->[!CAUTION]
->This text needs to be entered in the same language that is set for the call queue.
 
 ### CommonParameters
 
