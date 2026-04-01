@@ -35,7 +35,7 @@ You need to be assigned permissions before you can run this cmdlet. Although thi
 
 ### Example 1
 ```powershell
-Invoke-ProvisioningRecipientDiagnostic -Recipients lukas@contoso.onmicrosoft.com,arnold@contoso.onmicrosoft.com
+Invoke-ProvisioningRecipientDiagnostic -Recipients lukas@contoso.onmicrosoft.com
 ```
 
 This example checks the specified mailboxes for provisioning errors, and repairs common issues by resubmitting or correcting the recipient object.
@@ -66,7 +66,9 @@ Accept wildcard characters: False
 
 > Applicable: Exchange Online
 
-The Recipients parameter specifies the email address of the mailbox, mail contact, mail user, or group you want to check. You can specify multiple values separated by commas.
+The Recipients parameter specifies the email address of the mailbox, mail contact, mail user, or group you want to check.
+
+**Note**: This parameter supports only one value.
 
 ```yaml
 Type: String[]
