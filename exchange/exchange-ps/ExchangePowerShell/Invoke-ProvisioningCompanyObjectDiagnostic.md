@@ -37,7 +37,7 @@ Invoke-ProvisioningCompanyObjectDiagnostic
 
 This example validates whether organization's core Microsoft 365 tenant information is healthy and correctly synchronized between Microsoft Entra ID and Exchange Online.
 
-For sample output, see [Sample output of Invoke-ProvisioningCompanyObjectDiagnostic](https://learn.microsoft.com/exchange/monitoring/diagnostics/provisioning-diagnostic-cmdlets#sample-output-of-invoke-provisioningcompanyobjectdiagnostic).
+For sample output, see [Sample output of Invoke-ProvisioningCompanyObjectDiagnostic](https://learn.microsoft.com/exchange/monitoring/diagnostic-cmdlets/organization-diagnostic-cmdlets#sample-output-of-invoke-provisioningcompanyobjectdiagnostic).
 
 ## PARAMETERS
 
