@@ -40,7 +40,7 @@ Invoke-ProvisioningRecipientDiagnostic -Recipients lukas@contoso.onmicrosoft.com
 
 This example checks the specified mailboxes for provisioning errors, and repairs common issues by resubmitting or correcting the recipient object.
 
-For sample output, see [Sample output of Invoke-ProvisioningRecipientDiagnostic](https://learn.microsoft.com/exchange/monitoring/diagnostics/provisioning-diagnostic-cmdlets#sample-output-of-invoke-provisioningrecipientdiagnostic).
+For sample output, see [Sample output of Invoke-ProvisioningRecipientDiagnostic](https://learn.microsoft.com/exchange/monitoring/diagnostic-cmdlets/organization-diagnostic-cmdlets#sample-output-of-invoke-provisioningrecipientdiagnostic).
 
 ## PARAMETERS
 
