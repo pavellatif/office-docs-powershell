@@ -37,7 +37,7 @@ Invoke-ProvisioningAcceptedDomainDiagnostic
 
 This example verifies whether the organizations's email domains are correctly configured in Exchange Online.
 
-For sample output, see [Sample output of Invoke-ProvisioningAcceptedDomainDiagnostic](https://learn.microsoft.com/exchange/monitoring/diagnostics/provisioning-diagnostic-cmdlets#sample-output-of-invoke-provisioningaccepteddomaindiagnostic).
+For sample output, see [Sample output of Invoke-ProvisioningAcceptedDomainDiagnostic](https://learn.microsoft.com/exchange/monitoring/diagnostic-cmdlets/organization-diagnostic-cmdlets#sample-output-of-invoke-provisioningaccepteddomaindiagnostic).
 
 ## PARAMETERS
 
