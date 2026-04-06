@@ -124,11 +124,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 
-[Get-CsSharedCallHistoryTemplate](./Get-CsSharedCallQueueHistoryTemplate.md)
+[Get-CsSharedCallQueueHistoryTemplate](./Get-CsSharedCallQueueHistoryTemplate.md)
 
-[Set-CsSharedCallHistoryTemplate](./Set-CsSharedCallQueueHistoryTemplate.md)
+[Set-CsSharedCallQueueHistoryTemplate](./Set-CsSharedCallQueueHistoryTemplate.md)
 
-[Remove-CsSharedCallHistoryTemplate](./Remove-CsSharedCallQueueHistoryTemplate.md)
+[Remove-CsSharedCallQueueHistoryTemplate](./Remove-CsSharedCallQueueHistoryTemplate.md)
 
 [New-CsCallQueue](./New-CsCallQueue.md)
 
