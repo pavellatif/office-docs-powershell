@@ -356,7 +356,7 @@ AssignmentBlockedState  : BlockedUntil
 AssignmentBlockedUntil  : 2025-10-11T21:30:00.0000000Z
 SmsActivationState      : NotActivated
 ```
-This example displays information about the telephone number +1 (402) 555-1234 which has a temporary assignment block. This block prevents the number from being assigned to any other user. Once the period shown in AssignmentBlockUntil passes, the AssignmentBlock will be automatically removed and the number will become available to be assigned to any user. Admin can also remove the block manually using [Remove-CsPhoneNumberAssignmentBlock](./remove-csphonenumberassignmentblock.md).
+This example displays information about the telephone number +1 (402) 555-1234 which has a temporary assignment block. This block prevents the number from being assigned to any other user. Once the period shown in AssignmentBlockedUntil passes, the AssignmentBlock will be automatically removed and the number will become available to be assigned to any user. Admin can also remove the block manually using [Remove-CsPhoneNumberAssignmentBlock](./remove-csphonenumberassignmentblock.md).
 
 ### Example 16
 ```powershell
@@ -731,7 +731,7 @@ Accept wildcard characters: False
 
 > Applicable: Microsoft Teams
 
-Filters the returned results based on the assignment status. Support values are Unassigned, UserAssigned, ConferenceAssigned, VoiceApplicationAssigned, ThirdPartyAppAssigned, and PolicyAssigned.
+Filters the returned results based on the assignment status. Supported values are Unassigned, UserAssigned, ConferenceAssigned, VoiceApplicationAssigned, ThirdPartyAppAssigned, and PolicyAssigned.
 
 ```yaml
 Type: System.String
