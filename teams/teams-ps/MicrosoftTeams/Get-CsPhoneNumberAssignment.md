@@ -427,7 +427,7 @@ This example displays information about the telephone number +1 (360) 322-7351 w
 Get-CsPhoneNumberAssignment -TelephoneNumber +13603227351
 ```
 ```output
-TelephoneNumber         : +13603227351
+TelephoneNumber         : +1555555555
 OperatorId              : 0019adbc-b82a-47b4-a799-4e993a9982f1
 NumberType              : CallingPlan
 ActivationState         : Activated
