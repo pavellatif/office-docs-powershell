@@ -162,7 +162,7 @@ This example shows how to send an email to Teams phone users informing them abou
 
 ### Example 14
 ```powershell
-Set-CsPhoneNumberAssignment -Identity user1@contoso.com -PhoneNumber '+14255551234' -PhoneNumberType CallingPlan -LocationId "7fda0c0b-6a3d-48b8-854b-3fbe9dcf6513" -AssignmentCategory Alternate
+Set-CsPhoneNumberAssignment -Identity user1@contoso.com -PhoneNumber '+1555555555' -PhoneNumberType CallingPlan -LocationId "7fda0c0b-6a3d-48b8-854b-3fbe9dcf6513" -AssignmentCategory Alternate
 ```
 This example shows how to assign an alternate calling plan number to a user. The alternate number can be from any country/region where the tenant can acquire a telephone number from. 
 
