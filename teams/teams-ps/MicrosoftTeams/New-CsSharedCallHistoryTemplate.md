@@ -34,7 +34,7 @@ New-CsSharedCallHistoryTemplate -Name "Customer Service" -Description "Missed:Al
 ```
 
 This example creates a new Shared Call History template where incoming missed calls for Call Queue are shown to authorized users and agents and, answered and outbound calls are shown to authorized users only. 
-Visibility to Auto Attendant Shared Voicemails in not defined, so it will be none.
+Visibility to Auto Attendant Shared Voicemails is not defined, so it will be none.
 
 ## PARAMETERS
 
