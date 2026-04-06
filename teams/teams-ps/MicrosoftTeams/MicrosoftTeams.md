@@ -294,7 +294,7 @@ Get the tenant level summary of all bulk sign in requests executed in the past 3
 Get the status of an active bulk sign in request.
 
 ### [Get-CsSharedCallHistoryTemplate](Get-CsSharedCallHistoryTemplate.md)
-```powershell Get-CsSharedCallHistoryTemplate -Id <string> [<CommonParameters>] ```
+Retrieves the list of Shared Call History templates.
 
 ### [Get-CsSharedCallQueueHistoryTemplate](Get-CsSharedCallQueueHistoryTemplate.md)
 ```powershell Get-CsSharedCallQueueHistoryTemplate -Id <string> [<CommonParameters>] ```
@@ -1248,7 +1248,7 @@ This cmdlet allows the admins to remove a tenant default configuration that appl
 This cmdlet will remove/delete a device from the remote log collection configuration.
 
 ### [Remove-CsSharedCallHistoryTemplate](Remove-CsSharedCallHistoryTemplate.md)
-```powershell Remove-CsSharedCallHistoryTemplate -Id <String> [<CommonParameters>] ```
+Removes Shared Call History template.
 
 ### [Remove-CsSharedCallQueueHistoryTemplate](Remove-CsSharedCallQueueHistoryTemplate.md)
 ```powershell Remove-CsSharedCallQueueHistoryTemplate -Id <String> [<CommonParameters>] ```
@@ -1578,7 +1578,7 @@ This cmdlet allows the admins to set a tenant default configuration that applies
 This cmdlet allows the admin to create and edit a device requested for remote log collection.
 
 ### [Set-CsSharedCallHistoryTemplate](Set-CsSharedCallHistoryTemplate.md)
-```powershell Set-CsSharedCallHistoryTemplate -Instance <instance> [<CommonParameters>] ```
+This cmdlet allows to configure Shared Call History template.
 
 ### [Set-CsSharedCallQueueHistoryTemplate](Set-CsSharedCallQueueHistoryTemplate.md)
 ```powershell Set-CsSharedCallQueueHistoryTemplate -Instance <instance> [<CommonParameters>] ```
