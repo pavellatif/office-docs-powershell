@@ -87,7 +87,7 @@
       ],
       "ms.devlang": "powershell",
       "feedback_system": "Standard",
-            "feedback_product_url": "https://github.com/MicrosoftDocs/office-docs-powershell/issues"
+      "feedback_product_url": "https://github.com/MicrosoftDocs/office-docs-powershell/issues"
     },
     "contributors_to_exclude": [
        "aditisrivastava07",
