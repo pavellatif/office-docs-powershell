@@ -2,7 +2,6 @@
 title: App-only authentication in Exchange Online PowerShell and Security & Compliance PowerShell
 ms.date: 03/11/2026
 ms.audience: Admin
-audience: Admin
 ms.topic: article
 ms.service: exchange-online
 ms.reviewer:
@@ -10,7 +9,6 @@ ms.localizationpriority: high
 ms.collection: Strat_EX_Admin
 ms.custom:
 ms.assetid:
-search.appverid: MET150
 description: "Learn how to configure app-only authentication (also known as certificate based authentication or CBA) using the Exchange Online PowerShell V3 module in scripts and other long-running tasks."
 ---
 
@@ -384,11 +382,9 @@ After you register the certificate with your application, you can use the privat
 
    ![Select Upload certificate on the Certificates & secrets page.](media/exo-app-only-auth-select-upload-certificate.png)
 
-   In the dialog that opens, browse to the public certificate (`.cer` file) you exported in [Step 3](#step-3-generate-a-certificate).
+   In the **Upload certificate** flyout that opens, browse to the public certificate (`.cer` file) you exported in [Step 3](#step-3-generate-a-certificate), and then select **Add**.
 
    ![Browse to the certificate and then select Add.](media/exo-app-only-auth-upload-certificate-dialog.png)
-
-   When you're finished, select **Add**.
 
    The certificate is now shown in the **Certificates** section.
 
