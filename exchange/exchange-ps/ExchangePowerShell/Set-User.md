@@ -1,10 +1,8 @@
 ---
 applicable: Exchange Server 2010, Exchange Server 2013, Exchange Server 2016, Exchange Server 2019, Exchange Server SE, Exchange Online, Built-in security add-on for on-premises mailboxes
-author: chrisda
 external help file: Microsoft.Exchange.RolesAndAccess-Help.xml
 Locale: en-US
 Module Name: ExchangePowerShell
-ms.author: chrisda
 online version: https://learn.microsoft.com/powershell/module/exchangepowershell/set-user
 schema: 2.0.0
 title: Set-User
@@ -857,7 +855,7 @@ Accept wildcard characters: False
 
 The MobilePhone parameter specifies the user's primary mobile phone number.
 
-**Note**: In Exchange Online, you can't use this parameter. Instead, use the MobilePhone parameter on the [Update-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser) cmdlet in Microsoft Graph PowerShell.
+In Exchange Online, you can also use the MobilePhone parameter on the [Update-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser) cmdlet in Microsoft Graph PowerShell.
 
 ```yaml
 Type: String
@@ -1027,7 +1025,7 @@ Accept wildcard characters: False
 
 The Phone parameter specifies the user's office telephone number.
 
-**Note**: In Exchange Online, you can't use this parameter. Instead, use the BusinessPhones parameter on the [Update-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser) cmdlet in Microsoft Graph PowerShell.
+In Exchange Online, you can also use the BusinessPhones parameter on the [Update-MgUser](https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguser) cmdlet in Microsoft Graph PowerShell.
 
 ```yaml
 Type: String
