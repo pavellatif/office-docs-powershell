@@ -1,10 +1,8 @@
 ---
 applicable: Exchange Server 2010, Exchange Server 2013, Exchange Server 2016, Exchange Server 2019, Exchange Server SE, Exchange Online, Built-in security add-on for on-premises mailboxes
-author: chrisda
 external help file: Microsoft.Exchange.CalendarsAndGroups-Help.xml
 Locale: en-US
 Module Name: ExchangePowerShell
-ms.author: chrisda
 online version: https://learn.microsoft.com/powershell/module/exchangepowershell/set-organizationrelationship
 schema: 2.0.0
 title: Set-OrganizationRelationship
@@ -68,7 +66,7 @@ This example modifies the free/busy access level to LimitedDetails, which includ
 Set-OrganizationRelationship -Identity "Contoso" -Enabled $false
 ```
 
-This example disables the organization relationship with Contoso
+This example disables the organization relationship with Contoso.
 
 ## PARAMETERS
 
@@ -608,7 +606,7 @@ Accept wildcard characters: False
 
 The TargetSharingEpr parameter specifies the URL of the target Exchange Web Services for the external organization.
 
-If you use this parameter, this URL is always used to reach the external Exchange server. TheURL that's specified by the TargetAutoDiscoverEpr parameter isn't used to locate the external Exchange server.
+If you use this parameter, this URL is always used to reach the external Exchange server. The URL that's specified by the TargetAutoDiscoverEpr parameter isn't used to locate the external Exchange server. Using this parameter improves reliability of the organization relationship.
 
 ```yaml
 Type: Uri
