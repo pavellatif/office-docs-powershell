@@ -89,6 +89,7 @@ Set-CsTeamsMeetingPolicy [[-Identity] <XdsIdentity>]
  [-EnrollUserOverride <String>]
  [-ExplicitRecordingConsent <String>]
  [-ExternalMeetingJoin <String>]
+ [-ExternalBotAccessMode <String>]
  [-Force]
  [-InfoShownInReportMode <String>]
  [-IPAudioMode <String>]
@@ -1288,6 +1289,27 @@ Aliases:
 Required: False
 Position: Named
 Default value: EnabledForAnyone
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExternalBotAccessMode
+
+Controls how external third-party automated bots and meeting assistants are handled when they attempt to join meetings. This policy provides predictable behavior and helps organizers apply intentional control for bot participation.
+
+Possible Values:
+- **AllowAllBots**: Don't detect bots; allow them to join meetings directly.
+- **RequireApprovalWhenDetected**: When detected, require approval before joining by routing detected bots to the meeting lobby. This is the default value.
+- **BlockDetectedBots**: Block detected bots from joining meetings.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: RequireApprovalWhenDetected
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
