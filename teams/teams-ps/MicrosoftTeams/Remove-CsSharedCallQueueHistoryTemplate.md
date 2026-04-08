@@ -14,7 +14,7 @@ title: Remove-CsSharedCallQueueHistoryTemplate
 # Remove-CsSharedCallQueueHistoryTemplate
 
 ## SYNOPSIS
-Deletes a Shared Call Queue History template.
+This PowerShell cmdlet is being deprecated, please use the new version [Remove-CsSharedCallHistoryTemplate](./Remove-CsSharedCallHistoryTemplate.md) instead.
 
 ## SYNTAX
 
