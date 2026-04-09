@@ -50,10 +50,7 @@ This example removes the compliance search named Case 1234
 
 The Identity parameter specifies the compliance search that you want to remove.
 
-You can use any value that uniquely identifies the compliance search. For example:
-
-- Name
-- JobRunId (GUID)
+You can use the Name value to uniquely identify the compliance search. 
 
 You can find these values by running the command Get-ComplianceSearch | Format-Table -Auto Name,JobRunId,Status
 
