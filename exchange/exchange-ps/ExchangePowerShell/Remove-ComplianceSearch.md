@@ -1,10 +1,8 @@
 ---
 applicable: Exchange Server 2016, Exchange Server 2019, Exchange Server SE, Security & Compliance
-author: chrisda
 external help file: Microsoft.Exchange.RecordsandEdge-Help.xml
 Locale: en-US
 Module Name: ExchangePowerShell
-ms.author: chrisda
 online version: https://learn.microsoft.com/powershell/module/exchangepowershell/remove-compliancesearch
 schema: 2.0.0
 title: Remove-ComplianceSearch
@@ -50,14 +48,9 @@ This example removes the compliance search named Case 1234
 
 > Applicable: Exchange Server 2016, Exchange Server 2019, Exchange Server SE, Security & Compliance
 
-The Identity parameter specifies the compliance search that you want to remove.
+The Identity parameter specifies the name of compliance search that you want to remove.
 
-You can use any value that uniquely identifies the compliance search. For example:
-
-- Name
-- JobRunId (GUID)
-
-You can find these values by running the command Get-ComplianceSearch | Format-Table -Auto Name,JobRunId,Status
+You can find this value by running the command `Get-ComplianceSearch | Format-Table -Auto Name,JobRunId,Status`.
 
 ```yaml
 Type: ComplianceSearchIdParameter

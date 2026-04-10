@@ -1,10 +1,8 @@
 ---
 applicable: Exchange Server 2010, Exchange Server 2013, Exchange Server 2016, Exchange Server 2019, Exchange Server SE, Exchange Online, Built-in security add-on for on-premises mailboxes
-author: chrisda
 external help file: Microsoft.Exchange.RemoteConnections-Help.xml
 Locale: en-US
 Module Name: ExchangePowerShell
-ms.author: chrisda
 online version: https://learn.microsoft.com/powershell/module/exchangepowershell/set-organizationconfig
 schema: 2.0.0
 title: Set-OrganizationConfig
@@ -710,8 +708,6 @@ The AdfsAudienceUris parameter specifies one or more external URLs that are used
 
 To enter multiple values and overwrite any existing entries, use the following syntax: `Value1,Value2,...ValueN`. If the values contain spaces or otherwise require quotation marks, use the following syntax: `"Value1","Value2",..."ValueN"`.
 
-To add or remove one or more values without affecting any existing entries, use the following syntax: `@{Add="Value1","Value2"...; Remove="Value3","Value4"...}`.
-
 For more information about configuring AD FS claims based authentication in Exchange, see [Use AD FS claims-based authentication with Outlook on the web](https://learn.microsoft.com/Exchange/clients/outlook-on-the-web/ad-fs-claims-based-auth).
 
 ```yaml
@@ -799,8 +795,6 @@ The AdfsSignCertificateThumbprints parameter specifies one or more X.509 token-s
 To get the thumbprint values of the primary and secondary token-signing certificates, open Windows PowerShell on the AD FS server and run the command Get-ADFSCertificate -CertificateType "Token-signing". For more information, see [Get-ADFSCertificate](https://learn.microsoft.com/powershell/module/adfs/get-adfscertificate).
 
 To enter multiple values and overwrite any existing entries, use the following syntax: `Value1,Value2,...ValueN`. If the values contain spaces or otherwise require quotation marks, use the following syntax: `"Value1","Value2",..."ValueN"`.
-
-To add or remove one or more values without affecting any existing entries, use the following syntax: `@{Add="Value1","Value2"...; Remove="Value3","Value4"...}`.
 
 ```yaml
 Type: MultiValuedProperty
@@ -909,7 +903,12 @@ Accept wildcard characters: False
 
 This parameter is available only in the cloud-based service.
 
-The AutoEnableArchiveMailbox specifies whether an archive mailbox is automatically provisioned when the primary mailbox reaches 90% of the size quota (if licenses include archiving). Valid values are:
+The AutoEnableArchiveMailbox specifies whether an archive mailbox is automatically provisioned when the primary mailbox reaches 90% of the size quota if the following statements are both true:
+
+- Archiving is included in the Microsoft 365 subscription.
+- The user isn't synchronized from the on-premises organization (the IsDirSynced property should be False).
+
+Valid values are:
 
 - $true: An archive mailbox is automatically provisioned.
 - $false: An archive mailbox isn't automatically provisioned.
@@ -4054,7 +4053,7 @@ The RejectDirectSend parameter specifies whether to block Direct Send in your or
 
 - $true: Direct Send is blocked. Exchange Online rejects anonymous messages sent from your own domain to your organization's mailboxes when the following conditions are met:
 
-  • The anonymous incoming messages don't match any inbound connectors.
+  • The anonymous incoming messages don't match any inbound connectors. We only consider inbound connectors configured to match the sender IP or certificate.
 
   • The domain in the MAIL FROM address (also known as the `5321.MailFrom` address, P1 sender, or envelope sender) is an accepted domain in your organization.
 
