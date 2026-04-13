@@ -483,7 +483,7 @@ The LanguageId parameter is the language that is used to read text-to-speech (TT
 
 See [Get-CsMainlineAttendantSupportedLanguages](get-csmainlineattendantsupportedlanguages.md) for a list of languages supported with Mainline attendant.
 
-See [Get-CsAutoAttendantSupportedLanguage](get-csautoattendantsupportedlanguage) for a list of languages supported with Auto attendant.
+See [Get-CsAutoAttendantSupportedLanguage](get-csautoattendantsupportedlanguage.md) for a list of languages supported with Auto attendant.
 
 ```yaml
 Type: System.String
