@@ -20,7 +20,7 @@ Use the New-CsAutoAttendant cmdlet to create a new Auto Attendant (AA).
 ## SYNTAX
 
 ```powershell
-New-CsAutoAttendant -Name <String> -LanguageId <String> -TimeZoneId <String> -DefaultCallFlow <Object> [-CallFlows <Object>] [-CallHandlingAssociations <Object>] [-Operator <Object>] [-VoiceId <String>] [-EnableVoiceResponse] [-EnableMainlineAttendant] [-MainlineAttendantAgentVoiceId <String>] [-InclusionScope <Object>] [-ExclusionScope <Object>] [-AuthorizedUsers <List>] [-HideAuthorizedUsers <List>] [-UserNameExtension <String>] [-Tenant <Guid>] [<CommonParameters>]
+New-CsAutoAttendant -Name <String> -LanguageId <String> -TimeZoneId <String> -DefaultCallFlow <Object> [-CallFlows <Object>] [-CallHandlingAssociations <Object>] [-Operator <Object>] [-VoiceId <String>] [-EnableVoiceResponse] [-EnableMainlineAttendant] [-MainlineAttendantAgentVoiceId <String>] [-InclusionScope <Object>] [-ExclusionScope <Object>] [-AuthorizedUsers <List>] [-HideAuthorizedUsers <List>] [-UserNameExtension <String>] [-AutoRecordingTemplateId <String>] [-Tenant <Guid>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,6 +42,7 @@ You can create new AAs by using the New-CsAutoAttendant cmdlet; each newly creat
 >
 > - -EnableMainLineAttendant
 > - -MainlineAttendantAgentVoiceId
+> - -AutoRecordingTemplateId
 
 **NOTES**:
 
@@ -290,6 +291,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+
+### -AutoRecordingTemplateId
+
+The Auto Recording template ID to apply to the Auto attendant.
+
+> [!NOTE]
+> 1. Requires that Mainline attendant be enabled
+> 1. Uses the text announcement only - any configured audio file will be ignored and the default prompt played instead
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CallFlows
 
 The CallFlows parameter represents call flows, which are required if they are referenced in the CallHandlingAssociations parameter.
@@ -370,6 +392,8 @@ Accept wildcard characters: False
 
 The MainlineAttendantAgentVoiceId parameter sets the voice that will be used with Mainline Attendant.
 
+See [Get-CsMainlineAttendantSupportedVoices](get-csmainlineattendantsupportedvoices.md) for a list of supported voices.
+
 PARAMVALUE: Alloy | Echo | Shimmer
 
 ```yaml
@@ -386,7 +410,7 @@ Accept wildcard characters: False
 
 ### -EnableVoiceResponse
 
-The EnableVoiceResponse parameter indicates whether voice response for AA is enabled.
+The EnableVoiceResponse parameter indicates whether voice response for Auto attendant is enabled.
 
 ```yaml
 Type: SwitchParameter
@@ -405,7 +429,7 @@ Accept wildcard characters: False
 Specifies the users to which call transfers are not allowed through directory lookup feature.
 If not specified, no user in the organization is excluded from directory lookup.
 
-Dial scopes can be created by using the [`New-CsAutoAttendantDialScope`](https://learn.microsoft.com/powershell/module/microsoftteams/new-csautoattendantdialscope) cmdlet.
+Dial scopes can be created by using the [New-CsAutoAttendantDialScope](new-csautoattendantdialscope.md) cmdlet.
 
 ```yaml
 Type: Object
@@ -440,7 +464,7 @@ Accept wildcard characters: False
 Specifies the users to which call transfers are allowed through directory lookup feature.
 If not specified, all users in the organization can be reached through directory lookup.
 
-Dial scopes can be created by using the [`New-CsAutoAttendantDialScope`](https://learn.microsoft.com/powershell/module/microsoftteams/new-csautoattendantdialscope) cmdlet.
+Dial scopes can be created by using the [New-CsAutoAttendantDialScope](new-csautoattendantdialscope.md) cmdlet.
 
 ```yaml
 Type: Object
@@ -458,7 +482,9 @@ Accept wildcard characters: False
 
 The LanguageId parameter is the language that is used to read text-to-speech (TTS) prompts.
 
-You can query the supported languages using the [`Get-CsAutoAttendantSupportedLanguage`](https://learn.microsoft.com/powershell/module/microsoftteams/get-csautoattendantsupportedlanguage) cmdlet.
+For Mainline attendant, use [Get-CsMainlineAttendantSupportedLanguages](get-csmainlineattendantsupportedlanguages.md) to query the supported languages.
+
+For Auto attendant, use [Get-CsAutoAttendantSupportedLanguage](https://learn.microsoft.com/powershell/module/microsoftteams/get-csautoattendantsupportedlanguage) cmdlet.
 
 ```yaml
 Type: System.String
@@ -492,7 +518,7 @@ Accept wildcard characters: False
 
 The Operator parameter represents the SIP address or PSTN number of the operator.
 
-You can create callable entities by using the `New-CsAutoAttendantCallableEntity` cmdlet.
+You can create callable entities by using the [New-CsAutoAttendantCallableEntity](new-csautoattendantcallableentity.md) cmdlet.
 
 ```yaml
 Type: Object
@@ -526,7 +552,7 @@ Accept wildcard characters: False
 
 The TimeZoneId parameter represents the AA time zone. All schedules are evaluated based on this time zone.
 
-You can query the supported timezones using the [`Get-CsAutoAttendantSupportedTimeZone`](https://learn.microsoft.com/powershell/module/microsoftteams/get-csautoattendantsupportedtimezone) cmdlet.
+Use [Get-CsAutoAttendantSupportedTimeZone](get-csautoattendantsupportedtimezone.md) to query the supported timezones.
 
 ```yaml
 Type: System.String
@@ -570,7 +596,7 @@ Accept wildcard characters: False
 
 The VoiceId parameter represents the voice that is used to read text-to-speech (TTS) prompts.
 
-You can query the supported voices by using the `Get-CsAutoAttendantSupportedLanguage` cmdlet.
+You can query the supported voices by using the [Get-CsAutoAttendantSupportedLanguage](get-csautoattendantsupportedlanguage.md] cmdlet.
 
 ```yaml
 Type: System.String
