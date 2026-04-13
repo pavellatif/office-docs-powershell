@@ -296,8 +296,8 @@ Accept wildcard characters: False
 The Auto Recording template ID to apply to the Auto attendant.
 
 > [!NOTE]
-> 1. Requires that Mainline attendant be enabled
-> 1. Uses the text announcement only - any configured audio file will be ignored and the default prompt played instead
+> 1. Requires that Mainline attendant be enabled.
+> 1. The template must not have an audio file configured.
 
 ```yaml
 Type: String
