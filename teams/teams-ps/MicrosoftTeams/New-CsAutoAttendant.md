@@ -597,7 +597,7 @@ The VoiceId parameter represents the voice that is used to read text-to-speech (
 
 See [Get-CsMainlineAttendantSupportedVoices](get-csmainlineattendantsupportedvoices.md) for a list of voices supported with Mainline attendant.
 
-See [Get-CsAutoAttendantSupportedLanguage](get-csautoattendantsupportedlanguage.md] for a list of voices supported with Auto attendant
+See [Get-CsAutoAttendantSupportedLanguage](get-csautoattendantsupportedlanguage.md) for a list of voices supported with Auto attendant
 
 ```yaml
 Type: System.String
