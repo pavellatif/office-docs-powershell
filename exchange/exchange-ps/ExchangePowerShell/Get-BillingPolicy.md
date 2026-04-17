@@ -13,7 +13,7 @@ title: Get-BillingPolicy
 ## SYNOPSIS
 This cmdlet is available only in the cloud-based service.
 
-The Get-BillingPolicy cmdlet to return detailed information about Microsoft 365 pay-as-you-go billing policies for High Volume Email configured for your organization.
+Use the Get-BillingPolicy cmdlet to return detailed information about Microsoft 365 pay-as-you-go billing policies for High Volume Email configured for your organization.
 
 For information about the parameter sets in the Syntax section below, see [Exchange cmdlet syntax](https://learn.microsoft.com/powershell/exchange/exchange-cmdlet-syntax).
 
