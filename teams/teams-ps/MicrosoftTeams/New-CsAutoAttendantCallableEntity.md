@@ -158,6 +158,9 @@ Accept wildcard characters: False
 ```
 ### -SharedVoicemailHistoryTemplateId
 
+>[!IMPORTANT]
+>The following configuration parameters will only work for customers that are participating in the Voice Applications private preview for these features. General Availability for this functionality has not been determined at this time.
+
 The SharedVoicemailHistoryTemplateId parameter specifies the ID of the Shared Call History template. When this template is assigned to an Auto Attendant, historical data for shared voicemails is collected and displayed in the Shared Call History within the [Teams Queues app](https://learn.microsoft.com/microsoftteams/manage-queues-app). Removing the SharedVoicemailHistoryTemplateId stops further historical data collection for Queues App. This parameter does not affect the [Shared Voicemail](https://learn.microsoft.com/en-us/microsoftteams/manage-shared-voicemail) experience in Outlook.
 
 
