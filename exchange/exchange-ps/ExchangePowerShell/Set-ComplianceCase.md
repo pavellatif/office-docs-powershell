@@ -15,7 +15,7 @@ This cmdlet is available only in Security & Compliance PowerShell. For more info
 
 Use the Set-ComplianceCase cmdlet to modify eDiscovery cases in the Microsoft Purview compliance portal.
 
-For information about the parameter sets in the Syntax section below, see [Exchange cmdlet syntax](/powershell/exchange/exchange-cmdlet-syntax).
+For information about the parameter sets in the Syntax section below, see [Exchange cmdlet syntax](https://learn.microsoft.com/powershell/exchange/exchange-cmdlet-syntax).
 
 > [!NOTE]
 > In the cloud, this cmdlet has the following requirements:
