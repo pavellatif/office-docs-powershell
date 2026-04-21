@@ -15,7 +15,7 @@ This cmdlet is available in on-premises Exchange and in the cloud-based service.
 
 Use the Set-ComplianceSearch cmdlet to modify non-running compliance searches in Exchange Server 2016 or later and in the Microsoft Purview compliance portal.
 
-For information about the parameter sets in the Syntax section below, see [Exchange cmdlet syntax](/powershell/exchange/exchange-cmdlet-syntax).
+For information about the parameter sets in the Syntax section below, see [Exchange cmdlet syntax](https://learn.microsoft.com/powershell/exchange/exchange-cmdlet-syntax).
 
 > [!NOTE]
 > In the cloud, this cmdlet has the following requirements:
