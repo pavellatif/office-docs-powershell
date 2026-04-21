@@ -32,6 +32,7 @@ Set-OwaMailboxPolicy [-Identity] <MailboxPolicyIdParameter>
  [-AllowedMimeTypes <MultiValuedProperty>]
  [-AllowedOrganizationAccountDomains <String[]>]
  [-AllowOfflineOn <AllowOfflineOnEnum>]
+ [-AttachmentsOfflineEnabledWin <Boolean>]
  [-BizBarEnabled <Boolean>]
  [-BlockedFileTypes <MultiValuedProperty>]
  [-BlockedMimeTypes <MultiValuedProperty>]
@@ -480,6 +481,34 @@ When offline mode is available, users can turn offline mode on or off themselves
 
 ```yaml
 Type: AllowOfflineOnEnum
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AttachmentsOfflineEnabledWin
+
+> Applicable: Exchange Online
+
+This parameter is available only in the cloud-based service.
+
+The AttachmentsOfflineEnabledWin parameter specifies whether file attachments are available for offline use in the new Outlook for Windows.
+
+This parameter only applies when offline capabilities are enabled in the new Outlook for Windows.
+
+Valid values are:
+- $true: Users can access file attachments while working offline in the new Outlook for Windows. This value is the default.
+- $false: Users can't access file attachments while working offline in the new Outlook for Windows.
+
+**Note**: If the OfflineEnabledWin parameter is set to $false, offline file attachments are disabled even if AttachmentsOfflineEnabledWin is set to $true.
+
+```yaml
+Type: Boolean
 Parameter Sets: (All)
 Aliases:
 
