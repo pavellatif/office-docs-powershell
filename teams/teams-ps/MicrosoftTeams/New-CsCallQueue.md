@@ -325,7 +325,7 @@ Accept wildcard characters: False
 
 ### -CustomAudioFileAnnouncementForCRFailure
 
-The CustomAudioFileAnnouncementForCRFailure parameter indicates the unique identifier for the Audio file prompt which is played to callers  if the compliance recording for call queue bot is unable to join or drops from the call.
+The CustomAudioFileAnnouncementForCRFailure parameter indicates the unique identifier for the Audio file prompt which is played to callers if the compliance recording for call queue bot is unable to join or drops from the call.
 
 ```yaml
 Type: Guid
