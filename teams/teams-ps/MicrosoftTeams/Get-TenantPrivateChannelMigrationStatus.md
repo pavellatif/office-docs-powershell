@@ -13,21 +13,21 @@ title: Get-TenantPrivateChannelMigrationStatus
 
 ## SYNOPSIS
 
-Gets the private channel migration status for a tenant.
+You use the `Get-TenantPrivateChannelMigrationStatus` cmdlet to check the status of private channel migration for your tenant.
 
 ## SYNTAX
 
+### Default (Default)
+
 ```powershell
-Get-TenantPrivateChannelMigrationStatus [<CommonParameters>]
+Get-TenantPrivateChannelMigrationStatus
 ```
 
 ## DESCRIPTION
 
-Gets the private channel migration status for the current tenant, including per-channel details for channels that were skipped or failed during migration.
+The `Get-TenantPrivateChannelMigrationStatus` cmdlet allows tenant administrators to track the status of the private channel migration for their Microsoft Teams organization. More details about the migration can be found [here](https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-enhancements-in-private-channels-in-microsoft-teams-unlock-their-full-potent/4438767#)
 
-More details about the migration can be found [here](https://techcommunity.microsoft.com/blog/microsoftteamsblog/new-enhancements-in-private-channels-in-microsoft-teams-unlock-their-full-potent/4438767#).
-
-Note: This cmdlet requires tenant administrator permissions to execute.
+**Note:** This cmdlet requires tenant administrator permissions to execute.
 
 ## EXAMPLES
 
@@ -93,6 +93,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### None
+
+This cmdlet does not accept pipeline input.
 
 ## OUTPUTS
 
