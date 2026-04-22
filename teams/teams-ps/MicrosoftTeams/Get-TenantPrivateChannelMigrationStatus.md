@@ -4,7 +4,7 @@ external help file: Microsoft.Teams.PowerShell.TeamsCmdlets.dll-Help.xml
 HelpUri: ''
 Locale: en-US
 Module Name: MicrosoftTeams
-ms.date: 10/10/2025
+ms.date: 04/22/2026
 PlatyPS schema version: 2024-05-01
 title: Get-TenantPrivateChannelMigrationStatus
 ---
