@@ -143,10 +143,10 @@ Accept wildcard characters: False
 
 ### -SharePointSiteName
 
->[!CAUTION]
->This must already exist. The cmdlet will not create the SharePoint site.
+> [!CAUTION]
+> The SharePoint site specified by `-SharePointSiteName` must be provisioned through the Auto Recording template creation process. Manually created SharePoint sites aren't supported and may result in access or permission errors. SharePoint sites provisioned through this process can be reused across multiple Auto Recording templates.
 
-The SharePoint sitename where the recordings and transcripts are stored.
+Specifies the name of the SharePoint site used to store automatic recording and transcription. The site will be provisioned if it doesn't already exist through the Auto Recording template creation process.
 
 ```yaml
 Type: System.String
