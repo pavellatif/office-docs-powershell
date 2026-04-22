@@ -27,13 +27,13 @@ New-CsAutoRecordingTemplate -Name <String> -Description <String> -SharePointHost
 >[!CAUTION]
 >The functionality provided by this cmdlet will only work for customers that are participating in the Voice Applications private preview for this feature. General Availability for this functionality has not been determined at this time.
 
-Use the New-CsAutoRecordingTemplate cmdlet to create an Auto Recording tempalte that can be assigned to a call queue.
+Use the New-CsAutoRecordingTemplate cmdlet to create an Auto Recording template that can be assigned to a call queue.
 
 ## EXAMPLES
 
 ### Example 1
 ```
-New-CsAutoRecordingTemplate -Name "Customer Service" -Description "Transcription & Recording enabled" -TranscriptionEnabled $true -RecordingEnabled $true -AgentViewPermission XXXXX -SharePointHostName YYYYYY -SharePointSiteName ZZZZZ -RecordingDocumentOwner GUID -AutoRecordingAnnouncementTextToSpeechPrompt "This call will be reocorded for quality and training purposes."
+New-CsAutoRecordingTemplate -Name "Customer Service" -Description "Transcription & Recording enabled" -TranscriptionEnabled $true -RecordingEnabled $true -AgentViewPermission XXXXX -SharePointHostName YYYYYY -SharePointSiteName ZZZZZ -RecordingDocumentOwner GUID -AutoRecordingAnnouncementTextToSpeechPrompt "This call will be recorded for quality and training purposes."
 ```
 
 This example creates a new Auto Recording template that enabled transcription and recording.
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 >[!CAUTION]
 >This text needs to be entered in the same language that is set for the call queue.
 
-The text to speach prompt that will be played to callers telling them their call is being recorded.
+The text to speech prompt that will be played to callers telling them their call is being recorded.
 
 ```yaml
 Type: System.String
