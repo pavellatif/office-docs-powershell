@@ -35,7 +35,7 @@ Use the Get-CsAgent cmdlet to list the AI Agent(s) configured in the tenant. Whe
 Get-CsAgent -Id 7d9997d0-1013-4d9c-83eb-caa6ec05f1b3
 ```
 
-This example retrieves the AI Agent with the Id `7d9997d0-1013-4d9c-83eb-caa6ec05f1b3`
+This example retrieves the AI Agent with the Id `7d9997d0-1013-4d9c-83eb-caa6ec05f1b3`.
 
 ### Example 2
 ```
