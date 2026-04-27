@@ -41,7 +41,7 @@ This example creates a new AI Agent that is associated with Microsoft Copilot St
 
 ### -Name
 
-The name of the AI Agent
+The name of the AI Agent.
 
 ```yaml
 Type: String
