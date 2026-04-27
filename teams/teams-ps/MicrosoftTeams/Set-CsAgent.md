@@ -37,7 +37,7 @@ $AIAgent.Name = "NewName"
 Set-CsAgent -Instance $AIAgent
 ```
 
-This example sets a new name value of an AI Agent with the Id `7d9997d0-1013-4d9c-83eb-caa6ec05f1b3`
+This example sets a new name value of an AI Agent with the Id `7d9997d0-1013-4d9c-83eb-caa6ec05f1b3`.
 
 ## PARAMETERS
 
