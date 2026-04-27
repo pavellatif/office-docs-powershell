@@ -1,10 +1,8 @@
 ---
 applicable: Security & Compliance
-author: chrisda
 external help file: Microsoft.Exchange.TransportMailflow-Help.xml
 Locale: en-US
 Module Name: ExchangePowerShell
-ms.author: chrisda
 online version: https://learn.microsoft.com/powershell/module/exchangepowershell/set-dlpcompliancepolicy
 schema: 2.0.0
 title: Set-DlpCompliancePolicy
@@ -626,7 +624,8 @@ Valid values are:
 
 - Browser: For use with policies applied to unmanaged cloud apps in Edge for Business.
 - CopilotExperiences
-- Entra: For use with policies applied to Entra-registered enterprise applications in the organization.
+- Application: For use with policies applied to Entra-registered enterprise applications in the organization. Application replaces the previous value Entra, which is now deprecated.
+
 - Network
 
 ```yaml

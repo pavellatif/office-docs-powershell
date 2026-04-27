@@ -211,6 +211,29 @@ TelephoneNumber     +12065555555
 
 This example returns the status of an in progress SMS Activation order.
 
+### Example 8
+```powershell
+PS C:\> $results = Get-CsOnlineTelephoneNumberOrder -OrderId 0fba1633-81f0-435d-b0a8-81d073cc6f29 -OrderType NumberUsageUpdate
+
+Key                 Value
+---                 -----
+OrderId             0fba1633-81f0-435d-b0a8-81d073cc6f29
+Status              Success
+ErrorMessage        
+OrderType           NumberUsageUpdate
+CreatedAt           1/6/2026 7:28:09 PM +00:00
+CreatedBy           UNATTRIBUTED
+TelephoneNumbers  {System.Collections.Generic.Dictionary`2[System.String,System.Object]}
+
+PS C:\> $results.TelephoneNumbers
+
+Key                 Value
+---                 -----
+TelephoneNumber     +12065555555
+```
+
+This example returns the status of a successful Number Usage Update order.
+
 ## PARAMETERS
 
 ### -OrderId
@@ -229,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -OrderType
-Specifies the type of telephone number order to look up. Currently supported values are **Search**, **Release**, **DirectRoutingNumberCreation**, and **SmsActivation/Deactivation**. If this value is unspecified, then it will default to a **Search** order.
+Specifies the type of telephone number order to look up. Valid values are **Search**, **Release**, **DirectRoutingNumberCreation**, and **SmsActivation**. You can use **SmsActivation** to find orders for both activating and deactivating SMS. The default value is **Search**.
 
 ```yaml
 Type: String
