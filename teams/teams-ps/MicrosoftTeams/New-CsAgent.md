@@ -23,7 +23,7 @@ New-CsAgent -Name <String> -AIAgentId <String> -AIAgentType <String> [-AIAgentTa
 ```
 
 ## DESCRIPTION
-Use the New-CsAgent cmdlet to create an AI Agent that can be associated with a Teams Phone Resource Account.
+Use the New-CsAgent cmdlet to create an AI Agent in the tenant. The AI Agent represents an external conversational provider (such as Microsoft Copilot Studio) that can answer calls on behalf of a Teams Phone Resource Account. After the agent is created, associate it with a Resource Account by using `New-CsOnlineApplicationInstanceAssociation`; the agent is not reachable until the association is made.
 
 > [!CAUTION]
 > This cmdlet will only work for customers that are participating in the AI Agent private preview for this feature. General Availability for this functionality has not been determined at this time.
@@ -32,7 +32,7 @@ Use the New-CsAgent cmdlet to create an AI Agent that can be associated with a T
 
 ### Example 1
 ```
-New-CsAgent -Name "SmartAgent" -AIAgentId "1a438619-c158-4483-bb04-7ca8de89ca58" -AIAgentType "MicrosoftCopilotStudio"
+New-CsAgent -Name "SmartAgent" -AIAgentId "9e6a9737-edbe-4452-9ec8-702944ef6a07" -AIAgentType "MicrosoftCopilotStudio"
 ```
 
 This example creates a new AI Agent that is associated with Microsoft Copilot Studio.
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 
 ### -AIAgentId
 
-Agent Id of given AI Agent Type.
+The ID of the agent as issued by the AI provider (for example, the Microsoft Copilot Studio agent ID).
 
 ```yaml
 Type: String

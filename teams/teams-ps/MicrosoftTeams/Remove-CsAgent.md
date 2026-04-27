@@ -32,10 +32,10 @@ Use the Remove-CsAgent cmdlet to delete an AI Agent.
 
 ### Example 1
 ```
-Remove-CsAgent -Id 3a4b3d9b-91d8-4fbf-bcff-6907f325842c
+Remove-CsAgent -Id 7d9997d0-1013-4d9c-83eb-caa6ec05f1b3
 ```
 
-This example deletes the AI Agent with the identity 3a4b3d9b-91d8-4fbf-bcff-6907f325842c. If no AI Agent exists with the identity 3a4b3d9b-91d8-4fbf-bcff-6907f325842c, then this command generates an error.
+This example deletes the AI Agent with the identity 7d9997d0-1013-4d9c-83eb-caa6ec05f1b3. If no AI Agent exists with the identity 7d9997d0-1013-4d9c-83eb-caa6ec05f1b3, then this command generates an error.
 
 ## PARAMETERS
 
@@ -76,3 +76,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-CsAgent](./Set-CsAgent.md)
 
 [Get-CsAgent](./Get-CsAgent.md)
+
+[New-CsOnlineApplicationInstanceAssociation](./New-CsOnlineApplicationInstanceAssociation.md)
