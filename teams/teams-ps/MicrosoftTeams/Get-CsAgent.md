@@ -13,9 +13,6 @@ title: Get-CsAgent
 
 # Get-CsAgent
 
-> [!CAUTION]
-> This cmdlet will only work for customers that are participating in the AI Agent private preview for this feature. General Availability for this functionality has not been determined at this time.
-
 ## SYNOPSIS
 Use the Get-CsAgent cmdlet to list the AI Agent(s).
 
@@ -26,7 +23,10 @@ Get-CsAgent [-Id <string>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Use the Get-CsAgent cmdlet to list the AI Agent(s).
+Use the Get-CsAgent cmdlet to list the AI Agent(s) configured in the tenant. When the -Id parameter is omitted, all AI Agents in the tenant are returned.
+
+> [!CAUTION]
+> This cmdlet will only work for customers that are participating in the AI Agent private preview for this feature. General Availability for this functionality has not been determined at this time.
 
 ## EXAMPLES
 
@@ -83,3 +83,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Set-CsAgent](./Set-CsAgent.md)
 
 [Remove-CsAgent](./Remove-CsAgent.md)
+
+[New-CsOnlineApplicationInstanceAssociation](./New-CsOnlineApplicationInstanceAssociation.md)

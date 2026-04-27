@@ -14,12 +14,12 @@ title: Set-CsAgent
 # Set-CsAgent
 
 ## SYNOPSIS
-Use the Set-CsAgent cmdlet to change an AI Agent
+Use the Set-CsAgent cmdlet to change an AI Agent.
 
 ## SYNTAX
 
 ```
-Set-CsAgent -Instance <instance> [<CommonParameters>]
+Set-CsAgent -Instance <AIAgentConfiguration> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +37,7 @@ $AIAgent.Name = "NewName"
 Set-CsAgent -Instance $AIAgent
 ```
 
-This example sets a new name value of a AI Agent with the Id `3a4b3d9b-91d8-4fbf-bcff-6907f325842c`
+This example sets a new name value of an AI Agent with the Id `3a4b3d9b-91d8-4fbf-bcff-6907f325842c`
 
 ## PARAMETERS
 
@@ -46,7 +46,7 @@ This example sets a new name value of a AI Agent with the Id `3a4b3d9b-91d8-4fbf
 The instance of the AI Agent to change.
 
 ```yaml
-Type: System.String
+Type: Microsoft.Rtc.Management.OAA.Models.AIAgentConfiguration
 Parameter Sets: (All)
 Aliases:
 

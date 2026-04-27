@@ -1,6 +1,6 @@
 ---
 applicable: Microsoft Teams
-author: tomkau
+author: minwoolee-msft
 external help file: Microsoft.Rtc.Management.Hosted.dll-help.xml
 Locale: en-US
 Module Name: MicrosoftTeams
@@ -65,7 +65,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Rtc.Management.OAA.Models.AIAgentConfiguration
+### None
 
 ## NOTES
 

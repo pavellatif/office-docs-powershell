@@ -60,7 +60,7 @@ Use the Find-CsGroup cmdlet to search groups.
 Use the Find-CsOnlineApplicationInstance cmdlet to find application instances that match your search criteria.
 
 ### [Get-CsAgent](Get-CsAgent.md)
-Retrieves the Agent(s) in the tenant 
+Retrieves the AI Agent(s) in the tenant.
 
 ### [Get-AllM365TeamsApps](Get-AllM365TeamsApps.md)
 This cmdlet returns all Microsoft Teams apps in the app catalog, including Microsoft, custom, and non-Microsoft apps.
@@ -780,7 +780,7 @@ Trigger a new direct assignments to group policy assignments cleanup.
 Trigger a new direct assignments to group policy assignments migration
 
 ### [New-CsAgent](New-CsAgent.md)
-Create an Agent that can be associated with a Teams Phone Resource Account.
+Create an AI Agent that can be associated with a Teams Phone Resource Account.
 
 ### [New-CsApplicationAccessPolicy](New-CsApplicationAccessPolicy.md)
 Creates a new application access policy. Application access policy contains a list of application (client) IDs.
@@ -1125,7 +1125,7 @@ Creates a new app in the Teams tenant app store.
 The Register-CsOnlineDialInConferencingServiceNumber command allows you to assign any additional service number that you may have acquired to your conference bridge.
 
 ### [Remove-CsAgent](Remove-CsAgent.md)
-Deletes an Agent.
+Deletes an AI Agent.
 
 ### [Remove-CsApplicationAccessPolicy](Remove-CsApplicationAccessPolicy.md)
 Deletes an existing application access policy.
@@ -1434,7 +1434,7 @@ Removes the tenant's hierarchy.
 Remove an owner or member from a team, and from the unified group which backs the team.
 
 ### [Set-CsAgent](Set-CsAgent.md)
-Modifies an Agent that can be associated with a Teams Phone Resource Account.
+Modifies an AI Agent that can be associated with a Teams Phone Resource Account.
 
 ### [Set-CsApplicationAccessPolicy](Set-CsApplicationAccessPolicy.md)
 Modifies an existing application access policy.

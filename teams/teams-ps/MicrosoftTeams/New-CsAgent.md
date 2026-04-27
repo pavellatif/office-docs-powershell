@@ -35,7 +35,7 @@ Use the New-CsAgent cmdlet to create an AI Agent that can be associated with a T
 New-CsAgent -Name "SmartAgent" -AIAgentId "1a438619-c158-4483-bb04-7ca8de89ca58" -AIAgentType "MicrosoftCopilotStudio"
 ```
 
-This example creates a new AI Agent that is assigned with Microsoft Copilot Studio.
+This example creates a new AI Agent that is associated with Microsoft Copilot Studio.
 
 ## PARAMETERS
 
@@ -50,7 +50,7 @@ Aliases:
 
 Required: True
 Position: Named
-Default value: Off
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 
 ### -AIAgentType
 
-Type of given AI Agent. i.e. MicrosoftCopilotStudio
+The type of AI Agent provider. Currently supported value: MicrosoftCopilotStudio.
 
 ```yaml
 Type: String
@@ -82,14 +82,14 @@ Aliases:
 
 Required: True
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -AIAgentTargetTagTemplateId
 
-Tag Template Id of this AI Agent. If given, this command will validate if the given tag template id exists or not. If the given Id of the tag template does not exist, this will command fail.
+Tag Template Id of this AI Agent. If given, this command will validate if the given tag template id exists or not. If the given Id of the tag template does not exist, this command will fail.
 
 ```yaml
 Type: System.String
@@ -126,3 +126,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 [Remove-CsAgent](./Remove-CsAgent.md)
 
 [New-CsTagsTemplate](./New-CsTagsTemplate.md)
+
+[New-CsOnlineApplicationInstanceAssociation](./New-CsOnlineApplicationInstanceAssociation.md)
