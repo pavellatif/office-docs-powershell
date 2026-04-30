@@ -861,6 +861,7 @@
   "Update-ExchangeHelp": "organization",
   "Cancel-SensitiveInformationScan": "policy-and-compliance",
   "Check-PurviewConfig": "policy-and-compliance",
+  "Export-PurviewConfig": "policy-and-compliance",
   "Disable-JournalArchiving": "policy-and-compliance",
   "Disable-JournalRule": "policy-and-compliance",
   "Disable-OutlookProtectionRule": "policy-and-compliance",
