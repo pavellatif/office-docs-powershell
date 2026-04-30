@@ -1535,7 +1535,7 @@ Accept wildcard characters: False
 ### -ParticipantNameChange
 This setting will enable Tenant Admins to turn on/off participant renaming feature.
 
-Possible Values: Enabled: Turns on the Participant Renaming feature. Disabled: Turns off the Particpant Renaming feature.
+Possible Values: Enabled: Turns on the Participant Renaming feature. Disabled: Turns off the Participant Renaming feature.
 
 ```yaml
 Type: String
@@ -1713,7 +1713,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScreenSharingMode
-Determines the mode in which a user can share a screen in calls or meetings. Set this to SingleApplication to allow the user to share an  application at a given point in time. Set this to EntireScreen to allow the user to share anything on their screens. Set this to Disabled to prohibit the user from sharing their screens.
+Determines the mode in which a user can share a screen in calls or meetings. Set this to SingleApplication to allow the user to share an application at a given point in time. Set this to EntireScreen to allow the user to share anything on their screens. Set this to Disabled to prohibit the user from sharing their screens.
 
 ```yaml
 Type: String
