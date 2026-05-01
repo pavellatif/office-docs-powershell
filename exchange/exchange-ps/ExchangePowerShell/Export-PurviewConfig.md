@@ -30,7 +30,7 @@ Export-PurviewConfig
 ```
 
 ## DESCRIPTION
-The Export-PurviewConfig cmdlet exports Purview diagnostic data for specified components in your organization. The data is returned as a ZIP archive (binary-encoded byte array) containing one file per component. Each file contains the diagnostic configuration data for that component in a structured format.
+This cmdlet exports Purview diagnostic data for specified components in your organization. The data is returned as a ZIP archive (binary-encoded byte array) containing one file per component. Each file contains the diagnostic configuration data for that component in a structured format.
 
 The exported ZIP file includes separate entries for each requested component, making it useful for troubleshooting and diagnostics of Purview configuration issues across DLP, MIP Labels, Classification, and Data Lifecycle Management.
 
@@ -48,6 +48,7 @@ This example exports diagnostic configuration data for the DLP component.
 ### Example 2
 ```powershell
 $result = Export-PurviewConfig -Components DLP,MIPLabels
+
 [IO.File]::WriteAllBytes("C:\DiagnosticExport.zip", $result)
 ```
 
@@ -59,16 +60,16 @@ This example exports diagnostic data for the DLP and MIPLabels components and sa
 
 > Applicable: Security & Compliance
 
-The Components parameter specifies which Purview components to export diagnostic data for. This parameter is required.
+The Components parameter specifies which Purview components to export diagnostic data for. Valid values are:
 
-You can specify multiple values separated by commas. Valid values are:
-
-- DLP
-- MIPLabels
 - ClassificationAndTextExtraction
 - DLM
+- DLP
+- MIPLabels
 
-**Note**: Not all component values may support data export. If an unsupported component is specified, a warning is logged and the component is skipped.
+You can specify multiple values separated by commas.
+
+**Note**: If you specify an unsupported component value, a warning is logged and the component is skipped.
 
 ```yaml
 Type: MultiValuedProperty
@@ -167,4 +168,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-
