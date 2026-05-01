@@ -31,7 +31,7 @@ This cmdlet lets the admin add new, update existing or remove the AcquiredCapabi
 
 ### Example 1
 ```powershell
-PS C:\> New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder -PhoneNumbers "12056788888,12056789999" -AcquiredCapabilitiesToAdd "UserAssigmment"
+PS C:\> New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder -PhoneNumbers "12056788888,12056789999" -AcquiredCapabilitiesToAdd "UserAssignment"
 ```
 
 ```output
@@ -44,7 +44,7 @@ This example shows how to add UserAssignment acquired capability for two numbers
 
 ### Example 2
 ```powershell
-PS C:\> New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder -PhoneNumbers "12056788888,12056789999" -AcquiredCapabilitiesToRemove "UserAssigmment"
+PS C:\> New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder -PhoneNumbers "12056788888,12056789999" -AcquiredCapabilitiesToRemove "UserAssignment"
 ```
 
 ```output
@@ -57,7 +57,7 @@ This example shows how to remove UserAssignment acquired capability from two num
 
 ### Example 3
 ```powershell
-PS C:\> New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder -PhoneNumbers "12056788888,12056789999" -AcquiredCapabilitiesToAdd "UserAssigmment", -AcquiredCapabilitiesToRemove "FirstPartyAppAssignment"
+PS C:\> New-CsPhoneNumberBulkUpdateDrNumberAcquiredCapabilitiesOrder -PhoneNumbers "12056788888,12056789999" -AcquiredCapabilitiesToAdd "UserAssignment", -AcquiredCapabilitiesToRemove "FirstPartyAppAssignment"
 ```
 
 ```output
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Indicates the phone numbers for which acquired capabilities are being updated.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 

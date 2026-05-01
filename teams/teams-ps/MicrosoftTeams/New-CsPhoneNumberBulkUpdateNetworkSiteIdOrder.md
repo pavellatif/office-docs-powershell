@@ -9,7 +9,7 @@ ms.author: pavellatif
 ms.reviewer: pavellatif
 online version: https://learn.microsoft.com/powershell/module/teams/new-csphonenumberbulkupdatenetworksiteidorder
 schema: 2.0.0
-title: New-CsPhoneNumberBulkUpdateReverseNumberLookupOrder
+title: New-CsPhoneNumberBulkUpdateNetworkSiteIdOrder
 ---
 
 # New-CsPhoneNumberBulkUpdateNetworkSiteIdOrder
