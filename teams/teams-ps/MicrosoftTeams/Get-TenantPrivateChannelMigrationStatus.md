@@ -56,7 +56,7 @@ TenantId                     : 94d200e4-2df1-45b9-bc3e-53cfa7cf4997
 MigrationStatus              : RequiresAdminAttention
 MigrationStartTimeStamp      : 2026-02-10T06:48:20.000Z
 MigrationCompletionTimeStamp :
-Details                      : {"totalChannels":10,"migratedChannels":6,"failedChannels":1,"ownerlessChannels":2,"remainingChannels":1,"ownerlessChannelsDetails":[{"channelThreadId":"19:70c903e82053408790c3941f614a4d36@thread.tacv2","teamId":"12025f7b-4e7d-4d4c-b597-10f52de1c198"},{"channelThreadId":"19:a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6@thread.tacv2","teamId":"b94ac03c-ba25-4e79-89ab-d23f707863f7"}],"failedChannelsDetails":[{"channelThreadId":"19:07soOXSzSPB9aYC_2B94KJikrIWmDmK4W7cXith31FM1@thread.tacv2","teamId":"b94ac03c-ba25-4e79-89ab-d23f707863f7"}]}
+Details                      : {"totalChannels":10,"migratedChannels":6,"failedChannels":1,"ownerlessChannels":2,"remainingChannels":1,"ownerlessChannelsDetails":[{"channelThreadId":"19:70c903e82053408790c3941f614a4d36@thread.tacv2","teamId":"12025f7b-4e7d-4d4c-b597-10f52de1c198"},{"channelThreadId":"19:a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6@thread.tacv2","teamId":"b94ac03c-ba25-4e79-89ab-d23f707863f7"}]}
 ```
 
 ### Example 3
@@ -72,13 +72,6 @@ Write-Host "Total: $($details.totalChannels), Migrated: $($details.migratedChann
 # List ownerless channels
 if ($details.ownerlessChannelsDetails) {
     foreach ($ch in $details.ownerlessChannelsDetails) {
-        Write-Host "  Channel: $($ch.channelThreadId), Team: $($ch.teamId)"
-    }
-}
-
-# List failed channels (no action needed)
-if ($details.failedChannelsDetails) {
-    foreach ($ch in $details.failedChannelsDetails) {
         Write-Host "  Channel: $($ch.channelThreadId), Team: $($ch.teamId)"
     }
 }
@@ -123,7 +116,6 @@ Returns a `PrivateChannelMigrationStatusResponse` object with the following prop
 | `ownerlessChannels` | Integer | Number of channels skipped because they have no owners. |
 | `remainingChannels` | Integer | Number of channels still in progress or not yet started. |
 | `ownerlessChannelsDetails` | Array | Per-channel details for ownerless channels. Each entry contains `channelThreadId` and `teamId`. |
-| `failedChannelsDetails` | Array | Per-channel details for failed channels. Each entry contains `channelThreadId` and `teamId`. |
 
 ### Channel detail object
 
@@ -137,8 +129,7 @@ Returns a `PrivateChannelMigrationStatusResponse` object with the following prop
 - This cmdlet requires tenant administrator permissions.
 - Private channels remain functional throughout the migration process.
 - The `Details` property is returned as a JSON string. Use `ConvertFrom-Json` to parse it.
-- When no ownerless or failed channels exist, the respective detail arrays may be empty or omitted from the JSON.
-- Failed channels do not require admin action. They are retried automatically.
+- When no ownerless channels exist, the `ownerlessChannelsDetails` array may be empty or omitted from the JSON.
 - Ownerless channels were skipped because they have no owners. If these channels are still in use, a tenant admin or Teams service admin can add an owner using [Add-TeamUser](https://learn.microsoft.com/powershell/module/microsoftteams/add-teamuser) and [Add-TeamChannelUser](https://learn.microsoft.com/powershell/module/microsoftteams/add-teamchanneluser).
 
 ## RELATED LINKS
