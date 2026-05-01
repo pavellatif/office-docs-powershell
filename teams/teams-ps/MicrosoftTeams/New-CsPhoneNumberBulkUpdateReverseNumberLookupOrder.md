@@ -61,7 +61,7 @@ This example removes skipInternalVoip option from two indicated phone numbers.
 ## PARAMETERS
 
 ### -PhoneNumbers
-The phone numbers to update RevereNumberLookup option for.
+The phone numbers to update ReverseNumberLookup option for.
 
 ```yaml
 Type: System.String
