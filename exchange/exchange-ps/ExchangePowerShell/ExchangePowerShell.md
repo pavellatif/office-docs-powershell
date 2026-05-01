@@ -1766,8 +1766,6 @@ Exchange PowerShell is built on PowerShell technology to a powerful command-line
 
 ### [Check-PurviewConfig](Check-PurviewConfig.md)
 
-### [Export-PurviewConfig](Export-PurviewConfig.md)
-
 ### [Disable-JournalArchiving](Disable-JournalArchiving.md)
 
 ### [Disable-JournalRule](Disable-JournalRule.md)
@@ -1785,6 +1783,8 @@ Exchange PowerShell is built on PowerShell technology to a powerful command-line
 ### [Execute-AzureADLabelSync](Execute-AzureADLabelSync.md)
 
 ### [Export-JournalRuleCollection](Export-JournalRuleCollection.md)
+
+### [Export-PurviewConfig](Export-PurviewConfig.md)
 
 ### [Export-TransportRuleCollection](Export-TransportRuleCollection.md)
 
